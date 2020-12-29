@@ -1,0 +1,19 @@
+{
+  "name": "conote",
+  "version": "0.1.0",
+  "description": "an application for taking college notes",
+  "main": "src/app.js",
+  "repository": "github.com/hedarikun/conote",
+  "author": "hedarikun",
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "pug": "^3.0.0",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4"
+  }
+}
