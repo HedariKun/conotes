@@ -1,4 +1,3 @@
-
 // tests
 
 // hashes from 1 - 6
@@ -14,11 +13,14 @@ const italic = /\*(.*)\*/gim
 const bold = /\*\*(.*)\*\*/gim
 const underline = /__(.*)__/gim
 const stroke = /~~(.*)~~/gim
+const tag = /\`(.*)\`/gim
 
 // special stuff
 const link = /\[(.*?)\]\((.*?)\)/gim
 const lineBreak = /\n$/gim
 
+// math Symbols
+const sqrt = /sqrt((\w+), (\w+))/gim
 
 export function parse(text) {
 	const result = text
@@ -34,6 +36,9 @@ export function parse(text) {
 		.replace(stroke, "<del>$1</del>")
 		.replace(link, "<a href='$2'>$1</a>")
 		.replace(lineBreak, "<br />")
+		.replace(tag, "<span class='tag'>$1</span>")
+		.replace(sqrt, "√^$1{$2}")
+	console.log(result)
 
 	return result
 }

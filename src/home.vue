@@ -1,18 +1,28 @@
 <template lang="pug">
-	h1 hello world
-    div(v-html="htmlD")
+  #home
+    side-bar
+    main-body
 </template>
 
 <script>
-  import {parse } from "./markdownParser"
+import {parse } from "./markdownParser"
+import SideBar from "./components/side-bar.vue"
+import MainBody from "./components/main-body.vue"
 export default {
   data: () => ({
-    htmlD: parse("# hello world \n **bold text** ~~text with strike~~ __underlined text__ ")
   }),
-  computed: {
-    show() {
-      return parse("# hello world")
-    }
-  }
+  components: {SideBar, MainBody}
 }
 </script>
+
+
+<style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e8e8e8;
+}
+</style>
