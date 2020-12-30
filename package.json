@@ -8,6 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
+    "marked": "^1.2.7",
     "pug": "^3.0.0",
     "sass": "^1.32.0",
     "vue-template-compiler": "^2.6.12"
@@ -16,6 +17,8 @@
     "jqmath": "^0.4.9",
     "parcel-bundler": "^1.12.4",
     "vue": "^2.6.12",
-    "vue-hot-reload-api": "^2.3.4"
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-router": "^3.4.9",
+    "vuex": "^3.6.0"
   }
 }

@@ -1,6 +1,6 @@
 <template lang="pug">
   #main-body
-    h1 hello world
+    router-view
 </template>
 
 <style lang="scss" scoped>
