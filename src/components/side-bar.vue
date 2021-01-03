@@ -4,7 +4,7 @@
       h2 Co-Notes
     #panel
       router-link.nav-butt(to="../") ..
-      router-link.nav-butt(v-for="x in getPages" :to="`${x}/`") {{ x }}
+      router-link.nav-butt(v-for="x in getPages" :to="x.type == 'dir' ? `${x.key}/` : `./${x.key}`") {{ x.key }}
 </template>
 
 <script>
