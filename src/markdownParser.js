@@ -38,7 +38,5 @@ export function parse(text) {
 		.replace(lineBreak, "<br />")
 		.replace(tag, "<span class='tag'>$1</span>")
 		.replace(sqrt, "√^$1{$2}")
-	console.log(result)
-
 	return result
 }
