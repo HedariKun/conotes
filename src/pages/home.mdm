@@ -1,5 +1,9 @@
 # hello
 
-```js
-if (x = 10) {
-}```
+this is text here *this is italic* **this is bold** __this is underlined__
+
+this is ~~**strike and bold together**~~
+
+**cell**: something somethin `important` other thing ~~i don't need this~~
+
+$\sum_{k=10} {x = 55}$

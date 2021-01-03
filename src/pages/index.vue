@@ -1,11 +1,17 @@
 <template lang="pug">
-  h1 hello from 
+  div(v-html="htmlMD")
 </template>
 
 <script>
+import { parse } from "../markdownParser"
 export default {
-  mounted() {
-    console.log(this.$route.path)
+  data: () => ({
+    htmlMD: ""
+  }),
+  async mounted() {
+    const res = await fetch(this.$pages.home)
+    const data = await res.text()
+    this.htmlMD = parse(data)
   }
 }
 </script>
