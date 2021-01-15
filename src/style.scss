@@ -6,3 +6,23 @@
 	border-radius: 4px;
 	padding: 3px 5px;
 }
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	margin: 15px 0;
+	width: 100%;
+}
+td, th {
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 8px;
+}
+tr:nth-child(even) {
+	background-color: #ededed;
+}
+
+li>p {
+	margin-top: 5px;
+	margin-left: 10px;
+}

@@ -7,3 +7,23 @@ this is ~~**strike and bold together**~~
 **cell**: something somethin `important` other thing ~~i don't need this~~
 
 $\sum_{k=10} {x = 55}$
+
+a | b
+-----
+1 | 2
+3 | 4
+5 | 
+
+part | definition
+-----------------
+heart | part that circulate blood 
+belly | best part in the body
+brain | the part that make us look ~~stupid~~ smart
+
+# chapter 2
+
+everything in life is either
+
+* potato
+* not a potato
+ adf
