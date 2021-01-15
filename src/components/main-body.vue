@@ -13,5 +13,6 @@
   margin-left: 250px;
   background-color: #fafafa;
   display: inline-block;
+  overflow-y: scroll;
 }
 </style>
