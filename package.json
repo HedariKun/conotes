@@ -6,6 +6,9 @@
   "repository": "github.com/hedarikun/conote",
   "author": "hedarikun",
   "license": "MIT",
+  "scripts": {
+    "prod:dev": "parcel src/index.html --port 80"
+  },
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",
     "marked": "^1.2.7",
